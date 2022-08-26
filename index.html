@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      @font-face {
+        font-family: 'AddingtonCF-DemiBold';
+        src: url('/fonts/AddingtonCF-DemiBold.woff2') format('woff2'), url('/fonts/AddingtonCF-DemiBold.woff') format('woff');
+      }
+
+      @font-face {
+        font-family: 'AkkuratPro-Regular';
+        src: url('/fonts/AkkuratPro-Regular.woff2') format('woff2'), url('/fonts/AkkuratPro-Regular.woff') format('woff');
+      }
+
+      *,
+      ::before,
+      ::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 14px;
+      }
+
+      h1 {
+        font-family: 'AddingtonCF-DemiBold';
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 1rem 0;
+      }
+
+      a,
+      p {
+        font-family: 'AkkuratPro-Regular';
+      }
+
+      #ban {
+        background-color: #f4e1ca;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 2rem 0;
+        position: relative;
+      }
+
+      #circle {
+        position: absolute;
+        bottom: 0;
+        left: 350px;
+        width: 150px;
+      }
+      #circle2 {
+        position: absolute;
+        top: 0;
+        transform: rotate(180deg);
+        right: 450px;
+        width: 200px;
+      }
+
+      #logo {
+        width: 125px;
+        margin-left: 15px;
+      }
+
+      .polo-cbonbdx {
+        display: flex;
+        align-items: center;
+      }
+
+      .agency-logo img {
+        width: 75px;
+      }
+
+      .work {
+        font-size: 20px;
+      }
+
+      .contact-link {
+        display: flex;
+      }
+
+      .right-contact,
+      .left-contact {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #social {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #f86230;
+        border-radius: 50px;
+        padding: 2.4rem 0.4rem;
+      }
+
+      #facebook #facebook-icon {
+        width: 42px;
+      }
+
+      #social a {
+        margin: 5px 0;
+      }
+
+      .right-contact {
+        margin-left: 15rem;
+      }
+
+      .right-contact a {
+        margin: 2px 0;
+      }
+
+      #phone,
+      #mail {
+        display: flex;
+        align-items: center;
+      }
+
+      #phone img,
+      #mail img {
+        width: 15px;
+        margin-right: 10px;
+      }
+
+      #social img {
+        width: 25px;
+      }
+
+      #cbonbdx {
+        margin-top: 5px;
+      }
+
+      @media screen and (max-width: 960px) {
+        #ban {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          min-height: 100vh;
+        }
+      }
+      @media screen and (max-width: 960px) {
+        .contact-link {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+      @media screen and (max-width: 960px) {
+        #info {
+          text-align: center;
+        }
+      }
+      @media screen and (max-width: 960px) {
+        .right-contact {
+          margin-left: 0;
+          align-items: center;
+          margin: 1.5rem 0;
+        }
+      }
+      @media screen and (max-width: 960px) {
+        #social {
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          padding: 0.4rem 2rem;
+          margin-top: 1rem;
+        }
+      }
+      @media screen and (max-width: 960px) {
+        #social a {
+          margin: 0 5px;
+        }
+      }
+      @media screen and (max-width: 960px) {
+        #logo {
+          margin-bottom: 10px;
+        }
+      }
+      @media screen and (max-width: 985px) {
+        #circle,
+        #circle2 {
+          display: none;
+        }
+      }
+    </style>
+    <div id="ban">
+      <img id="circle" src="https://influenceagence.com/wp-content/uploads/2022/08/1Fichier-4.png" alt="" />
+      <img id="circle2" src="https://influenceagence.com/wp-content/uploads/2022/08/1Fichier-4.png" alt="" />
+      <div class="agency-logo">
+        <a target="_blank" href="https://influenceagence.com/">
+          <img id="logo" src="https://influenceagence.com/wp-content/uploads/2021/08/logo-02.svg" alt="" />
+        </a>
+        <div class="polo-cbonbdx">
+          <a target="_blank" href="https://www.instagram.com/cbon_bordeaux_/">
+            <img src="https://influenceagence.com/wp-content/uploads/2022/08/CBON_FINAL_NB.png" alt="" />
+          </a>
+          <a target="_blank" href="https://polopourlesrestos.com/">
+            <img src="https://influenceagence.com/wp-content/uploads/2022/08/21-15_POLO_Brand_-12.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div id="info">
+        <h1 class="name">Raphaël MARTEL</h1>
+        <p class="work">Développeur Web</p>
+        <div class="contact-link">
+          <div class="left-contact">
+            <a id="influence" target="_blank" href="https://influenceagence.com/" class="influence-link"> influence-agence.com</a>
+            <a id="cbonbdx" target="_blank" href="https://www.instagram.com/cbon_bordeaux_/" class="cbonbdx-link">cbon-bordeaux.com</a>
+          </div>
+          <div class="right-contact">
+            <a id="phone" href="tel:+33 6.16.49.29.91">
+              <img src="https://influenceagence.com/wp-content/uploads/2022/08/phone-call-auricular-symbol-in-black_icon-icons.com_56483.png" alt="" />
+              +33 6.16.49.29.91</a
+            >
+            <a id="mail" href="mailto:raphael.martel@influencesfood.com">
+              <img src="https://influenceagence.com/wp-content/uploads/2022/08/mail_icon-icons.com_72317.png" alt="" />
+              raphael.martel@influencesfood.com</a
+            >
+          </div>
+        </div>
+      </div>
+      <div id="social">
+        <a href="#">
+          <img src="https://influenceagence.com/wp-content/uploads/2022/08/tiktok_logo_icon_144802.png" alt="" />
+        </a>
+        <a id="facebook" target="_blank" href="https://www.facebook.com/Influencesfood">
+          <img id="facebook-icon" src="https://influenceagence.com/wp-content/uploads/2022/08/Facebook_Square_icon-icons.com_49948.png" alt="" />
+        </a>
+        <a target="_blank" href="https://www.instagram.com/influencebordeaux/">
+          <img src="https://influenceagence.com/wp-content/uploads/2022/08/Instagram_New_icon-icons.com_69008.png" alt="" />
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/company/influences-food/">
+          <img src="https://influenceagence.com/wp-content/uploads/2022/08/sociallinkedin_member_70.png" alt="" />
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
